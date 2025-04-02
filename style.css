@@ -57,7 +57,7 @@ body {
 }
 
 .banner {
-    width: 93%;
+    width: 94%;
     height: 400px;
     overflow: hidden;
     position: relative;
@@ -73,6 +73,8 @@ body {
 }
 
 .texto {
+    font-size: 40px;
+    height: auto;
     position: absolute; /* Posiciona o texto em relação ao container */
     top: 50%; /* Posiciona o texto no meio verticalmente */
     left: 50%; /* Posiciona o texto no meio horizontalmente */
@@ -80,6 +82,15 @@ body {
     color: white; /* Cor do texto para que fique visível sobre a imagem */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar a visibilidade */
     text-align: center; /* Alinha o texto ao centro */
+}
+
+.vitrine {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    gap: 30px;
 }
 
 .card {
@@ -95,9 +106,16 @@ body {
 }
 
 .card img {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.card p {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 .card:hover {
