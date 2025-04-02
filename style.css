@@ -1,0 +1,115 @@
+:root {
+    --primary: #272727;
+    --gray100: #a7a7a7;
+    --gray200: #9c9c9c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: linear-gradient(white, var(--gray100), var(--gray200));
+}
+
+.navbar {
+    background-color: var(--primary);
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: 2.5em;
+}
+
+.navbar input {
+    padding: 5px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    transform: scale(1.1);
+}
+
+.banner {
+    width: 93%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 40px auto;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+.texto {
+    position: absolute; /* Posiciona o texto em relação ao container */
+    top: 50%; /* Posiciona o texto no meio verticalmente */
+    left: 50%; /* Posiciona o texto no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o texto para que seu centro fique exatamente no centro da imagem */
+    color: white; /* Cor do texto para que fique visível sobre a imagem */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar a visibilidade */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.card {
+    width: 150px;
+    height: 250px;
+    border: 1px solid var(--gray200);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 5px 5px 10px var(--gray200);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px var(--primary);
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+}
