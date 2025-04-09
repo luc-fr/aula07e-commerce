@@ -42,9 +42,10 @@ body {
     padding: 5px;
 }
 
+
+
 .menu {
-    display: flex;
-    gap: 15px;
+    position: relative;
 }
 
 .menu a {
@@ -55,6 +56,29 @@ body {
 .menu a:hover {
     transform: scale(1.1);
 }
+
+.lista-header {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.lista-header .li a {
+    color: white;
+    text-decoration: none;
+}
+
+.lista-header .li a:hover {
+    transform: scale(1.1);
+}
+
+.hamburguer {
+    display: none;
+}
+
+
+
+
 
 .banner {
     width: 94%;
@@ -75,13 +99,20 @@ body {
 .texto {
     font-size: 40px;
     height: auto;
-    position: absolute; /* Posiciona o texto em relação ao container */
-    top: 50%; /* Posiciona o texto no meio verticalmente */
-    left: 50%; /* Posiciona o texto no meio horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta o texto para que seu centro fique exatamente no centro da imagem */
-    color: white; /* Cor do texto para que fique visível sobre a imagem */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhorar a visibilidade */
-    text-align: center; /* Alinha o texto ao centro */
+    position: absolute;
+    /* Posiciona o texto em relação ao container */
+    top: 50%;
+    /* Posiciona o texto no meio verticalmente */
+    left: 50%;
+    /* Posiciona o texto no meio horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta o texto para que seu centro fique exatamente no centro da imagem */
+    color: white;
+    /* Cor do texto para que fique visível sobre a imagem */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra no texto para melhorar a visibilidade */
+    text-align: center;
+    /* Alinha o texto ao centro */
 }
 
 .vitrine {
@@ -130,4 +161,26 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 0;
+}
+
+@media screen and (max-width: 703px) {
+
+    .logo {
+        font-size: 10px;
+    }
+
+    .lista-header {
+        /*display: none;*/
+        flex-direction: column;
+        background-color: #9c9c9c;
+        padding: 10px;
+        position: absolute;
+        top: -40px;
+        left: -85px;
+    }
+
+    /*.hamburguer {
+        display: block;
+        cursor: pointer;
+    }*/
 }
