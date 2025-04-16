@@ -184,3 +184,26 @@ footer {
         cursor: pointer;
     }*/
 }
+
+
+.checkout {
+    width: 130px;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+img.checkout,
+input.checkout {
+    display: block;
+    margin: 0 auto;
+}
+
+input.checkout {
+    width: 70px;             /* ou qualquer valor que achar legal (ex: 60px, 100px) */
+    margin: 0 auto;          /* centraliza o input */
+    display: block;          /* precisa disso pra o margin funcionar */
+    text-align: center;      /* centraliza o número dentro do input */
+}

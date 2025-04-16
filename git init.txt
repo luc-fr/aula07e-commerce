@@ -1,0 +1,19 @@
+git init
+-> para monitorar a pasta e fazer com que fique "(main)"
+
+
+ls -lha
+-> monitorar as pastas/arquivos internos dentro de uma pasta
+
+
+rm -rf .git
+-> remover todas as pastas e subpastas / parar de monitorar /
+-> rm -rf (nome do diretório)
+
+
+git add index.html
+-> para adicionar especificamente o arquivo informado "index.html"
+
+
+git config --global user.name
+-> para adicionar a conta
